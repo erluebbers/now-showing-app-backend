@@ -22,4 +22,13 @@ class ApplicationController < Sinatra::Base
     movie.to_json(include: :theaters)
   end
 
+  patch "/theaters/:id" do
+    theater = Theater.find(params[:id])
+    theater.update(
+      name: params[:name],
+      number_of_screens: params[:number_of_screens],
+      location: params[:location]
+    )
+  end
+
 end
