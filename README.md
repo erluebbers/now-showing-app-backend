@@ -1,4 +1,4 @@
-The Now Shoping App is a tool to look up movies by theater and vice versa that demonstrates the functionality of a Sinatra Backend and React Frontend application. Within this app, there are a few features:
+The Now Showing App is a tool to look up movies by theater and vice versa that demonstrates the functionality of a Sinatra Backend and React Frontend application. Within this app, there are a few features:
 
 - You can look at movies by exploring 4 ficitional Seattle movie theaters and use a select dropdwon to see the movies that are playing at each of those theaters. 
 - If you already know what movie that you want to see, you can do to a different dropdown and select the movie and it will automatically display which theaters it is playing at. 
