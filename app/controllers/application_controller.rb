@@ -32,4 +32,13 @@ class ApplicationController < Sinatra::Base
     theater.to_json
   end
 
+  post "/movies" do 
+    movie = Movie.create(
+      name: params[:name],
+      rating: params[:rating]
+      opening_date: params[:opening_date]
+    )
+    movie.to_json
+  end
+
 end
