@@ -29,6 +29,7 @@ class ApplicationController < Sinatra::Base
       number_of_screens: params[:number_of_screens],
       location: params[:location]
     )
+    theater.to_json
   end
 
 end
