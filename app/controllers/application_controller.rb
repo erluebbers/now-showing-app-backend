@@ -35,7 +35,7 @@ class ApplicationController < Sinatra::Base
   post "/movies" do 
     movie = Movie.create(
       name: params[:name],
-      rating: params[:rating]
+      rating: params[:rating],
       opening_date: params[:opening_date]
     )
     movie.to_json
