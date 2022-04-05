@@ -37,7 +37,12 @@ class ApplicationController < Sinatra::Base
       rating: params[:rating],
       opening_date: params[:opening_date]
     )
-    movie.to_json
+    showing = movie.showings.create(
+      theater_id: params[:theater_id]
+    )
+    movie.to_json(include: :theaters)
   end
 
 end
+
+
